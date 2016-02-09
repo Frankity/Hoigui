@@ -39,6 +39,7 @@ namespace HOIGUI
             megaClient.LoginAnonymous();
             Stopwatch Wtchr = Stopwatch.StartNew();
             Task t = megaClient.DownloadFileAsync(uri, path + "\\" + fname);
+
             try
             {
                 Wtchr.Start();
@@ -94,6 +95,12 @@ namespace HOIGUI
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             GetWithMega(url, fname);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            this.Close();
         }
 
 

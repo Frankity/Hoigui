@@ -1,9 +1,8 @@
 ﻿<Window x:Class="HOIGUI.WinDownload"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Download" Height="113" Width="469" Loaded="Window_Loaded">
+        Title="Download" Height="113" Width="469" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid Margin="0,0,2,-1">
-        <Button Content="Stop" HorizontalAlignment="Left" Margin="368,39,0,0" VerticalAlignment="Top" Width="75"/>
         <ProgressBar x:Name="pbwd" HorizontalAlignment="Left" VerticalAlignment="Top" Width="433" Margin="10,10,0,0" Height="24"/>
         <Label Content="Downloading:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,42,0,0"/>
         <Label x:Name="mname" Content="ModName" HorizontalAlignment="Left" Margin="93,42,0,0" VerticalAlignment="Top"/>
