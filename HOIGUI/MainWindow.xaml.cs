@@ -66,9 +66,6 @@ namespace HOIGUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-
-            //pb1.Value = pb1.Value += 1;
         }
 
         public class ModList
@@ -168,14 +165,12 @@ namespace HOIGUI
                     {
                         string link = UrlList[lvUsers.SelectedIndex];
                         string Fname = Filenames[lvUsers.SelectedIndex];
-                        //   System.Windows.Forms.MessageBox.Show(UrlList[lvUsers.SelectedIndex] + Fname);
                         if (link.StartsWith("https://mega"))
                         {
                             HOIGUI.WinDownload WD = new HOIGUI.WinDownload();
                             WD.url = link;
                             WD.fname = Fname;
                             WD.ShowDialog();
-
                         }
                     }
                 }
@@ -194,6 +189,7 @@ namespace HOIGUI
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
+
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -201,9 +197,6 @@ namespace HOIGUI
             ModsPathDlg.ShowDialog();
             lbl2.Text = ModsPathDlg.SelectedPath;
         }
-
-
-
     }
 }
 
